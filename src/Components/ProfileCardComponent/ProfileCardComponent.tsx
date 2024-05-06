@@ -1,5 +1,5 @@
 
-type userProps = {
+type UserProps = {
     repo: number;
     avatar: string;
     name: string;
@@ -9,7 +9,7 @@ type userProps = {
 
 }
 
-const ProfileCard = (props: userProps) => {
+const ProfileCard: React.FC<UserProps> = (props) => {
     return (
         <div className="flex justify-center">
             <div className="flex shadow-2xl rounded-2xl">
